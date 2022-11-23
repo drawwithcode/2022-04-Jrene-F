@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="horse.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.speech.js"></script>
+  </head>
+
+  <body class="body">
+    <script src="horse.js"></script>
+
+  <div class = "box">
+    <!-- button that allows you to go to the home page-->	
+    <a href="index.html"><button class="arrow">
+      <img src="assets/back_arrow.png" alt="" width = "60px">
+    </button></a>
+  </div>
+  <!-- button for the eraser -->	
+  <!-- the function buttonAction is called every time you click the button. The parameter #999999 (white) and an action is passed to the function-->
+    <div class = "box2">
+    <button class="eraser" onclick="buttonAction('#99999', 'erase')">
+      <img src="assets/eraser.png" alt="" width = "60px">
+    </button>
+    </div>
+
+
+    <div class ="text">Say square or circle</div>
+<!-- buttons for the colors -->	
+<!-- the function buttonAction is called every time you click on a button. A parameter concerning colors and an action are passed to the function -->	
+<div>
+   <div class="container"> 
+      <button class="colors" onclick="buttonAction('#FF0000', 'changeColor')">
+        <img src="assets/red.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#F7931E', 'changeColor')">
+        <img src="assets/orange.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#FCEE21', 'changeColor')">
+        <img src="assets/yellow.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#7AC943', 'changeColor')">
+        <img src="assets/green.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#3FA9F5', 'changeColor')">
+        <img src="assets/lightblue.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#3040FF', 'changeColor')">
+        <img src="assets/blue.png" alt="" width="80%">
+      </button>
+      <button class="colors" onclick="buttonAction('#9C1CE6', 'changeColor')">
+        <img src="assets/purple.png" alt="" width="80%" >
+      </button >
+      <button class="colors" onclick="buttonAction('#000000', 'changeColor')">
+        <img src="assets/black.png" alt="" width="80%">
+      </button>
+    </div>
+  </div>
+
+  </body>
+</html>

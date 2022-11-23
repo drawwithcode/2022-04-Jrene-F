@@ -1,8 +1,107 @@
-html, body {
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-canvas {
-  display: block;
+
+.body {
+	background-color: rgba(255, 202, 187);
+	position: absolute;	
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+
+.title {
+  font-size: max(3vw, 40px);
+	color: white;
+	font-family: 'Nunito',  sans-serif;
+	text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 1%;
+	padding-bottom: 1%;
+  background-color: #FF6E6B;
+  width: 80%;
+  border-radius: 0px 60px 60px 0px;
+  box-shadow: 4px 4px 5px -3px #97786F; 
+}
+
+
+.box {
+  position: relative;
+  text-align: center;
+	margin: auto;
+  width:50%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.box a {
+	text-decoration: none;
+}
+
+.button {
+  width:auto;
+  height:auto;
+  margin: 1%;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 8px 7px 8px -2px #97786F; 
+}
+
+.box2 {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  bottom: 0;
+	margin: auto;
+  width:30%;
+  z-index: 2;
+}
+
+/*Media per il titolo della pagina albums*/
+@media screen and (max-width: 600px) {
+  img {
+    width:140px; height: 140px;
+  }
+  
+ .box {
+  width:90%;
+}
+
+.title {
+  font-size: 7vw;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.button {
+  top: 40%;
+  transform: translateY(40%);
+}
+
+.box2 {
+  position: absolute;
+  text-align: center;
+  right: 35%;
+}
+
+#alpaca {
+  width: 100px;
+  height: 100px;
+}
 }
